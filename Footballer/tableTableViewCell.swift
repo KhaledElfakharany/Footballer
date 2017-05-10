@@ -30,6 +30,7 @@ class tableTableViewCell: UITableViewCell {
         
         teamLogo.frame = CGRect(x: 40, y: 13, width: 35, height: 30)
         teamLogo.image = UIImage(named: "Chelsea")
+        teamLogo.contentMode = UIViewContentMode.scaleAspectFit
         
         teamPosition.frame = CGRect(x: 0, y: 15, width: 35, height: 16)
         teamName.frame = CGRect(x: 22, y: 0, width: 71, height: 11)

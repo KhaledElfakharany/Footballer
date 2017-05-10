@@ -13,6 +13,8 @@ class CompetitionScreen: UIViewController, UITableViewDelegate, UITableViewDataS
     var competitionID :String!
     var competitionName :String!
     var tableTableView: UITableView!
+    var fixturesTableView: UITableView!
+    let tableView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,16 +34,20 @@ class CompetitionScreen: UIViewController, UITableViewDelegate, UITableViewDataS
         labelsForTable.image = UIImage(named: "labelsTableView")
         self.view.addSubview(labelsForTable)
         
+        // This part of code is responsible for adding UIView for TableView
+        tableView.frame = CGRect(x: 37, y: 80, width: 340, height: 650)
+        tableView.backgroundColor = UIColor.clear
+        self.view.addSubview(tableView)
+        
         // This part of code is responsible for adding tableView
-        tableTableView = UITableView(frame: CGRect(x: 37, y: 80, width: 340, height: 650))
+        tableTableView = UITableView(frame: CGRect(x: 0, y: 0, width: 340, height: 650))
         tableTableView.register(tableTableViewCell.self, forCellReuseIdentifier: "TableCell")
         tableTableView.delegate = self
         tableTableView.dataSource = self
         tableTableView.backgroundColor = UIColor.clear
         tableTableView.separatorColor = UIColor.clear
         tableTableView.allowsSelection = false
-        
-        self.view.addSubview(tableTableView)
+        tableView.addSubview(tableTableView)
         
         // This part of code is responsible for adding the footer Image and Competition Image
         let footerImage = UIImageView()
@@ -73,28 +79,44 @@ class CompetitionScreen: UIViewController, UITableViewDelegate, UITableViewDataS
         
         
         
-        
-        
 
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        if tableView == tableTableView {
+            return 20
+        }
         return 20
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView == tableTableView {
+            return 1
+        }
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableTableView.dequeueReusableCell(withIdentifier: "TableCell", for: indexPath) as? tableTableViewCell{
-        cell.configureCell(cell: cell)
-        return cell
+        if tableView == tableTableView {
+            if let cell = tableTableView.dequeueReusableCell(withIdentifier: "TableCell", for: indexPath) as? tableTableViewCell{
+                cell.configureCell(cell: cell)
+                return cell
+            }
         }
-        return tableTableViewCell()
+        else if tableView == fixturesTableView {
+            return UITableViewCell()
+        }
+        
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 46
+        if tableView == tableTableView {
+            return 46
+        }
+        else if tableView == fixturesTableView {
+            return 92
+        }
+        return 0
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 5
@@ -113,14 +135,18 @@ class CompetitionScreen: UIViewController, UITableViewDelegate, UITableViewDataS
         switch sender.selectedSegmentIndex {
         case 1:
             print("Fixtures")
+            self.tableView.isHidden = true
             break
             
         case 2:
             print("Teams")
+            self.tableView.isHidden = true
             break
             
         default:
             print("Table")
+            self.tableView.isHidden = false
+            
             break
         }
     }
