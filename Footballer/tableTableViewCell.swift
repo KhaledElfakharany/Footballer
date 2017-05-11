@@ -76,16 +76,16 @@ class tableTableViewCell: UITableViewCell {
         goalsDifference.textAlignment = NSTextAlignment.center
         points.textAlignment = NSTextAlignment.center
         
-        teamPosition.font = UIFont(name: "Avenir", size: 12)
-        teamName.font = UIFont(name: "Avenir", size: 9)
-        played.font = UIFont(name: "Avenir", size: 10)
-        win.font = UIFont(name: "Avenir", size: 10)
-        draw.font = UIFont(name: "Avenir", size: 10)
-        lose.font = UIFont(name: "Avenir", size: 10)
-        goalsScored.font = UIFont(name: "Avenir", size: 10)
-        goalsAgainst.font = UIFont(name: "Avenir", size: 10)
-        goalsDifference.font = UIFont(name: "Avenir", size: 10)
-        points.font = UIFont(name: "Avenir", size: 10)
+        teamPosition.font = UIFont(name: "Avenir-Black", size: 12)
+        teamName.font = UIFont(name: "Avenir-Black", size: 9)
+        played.font = UIFont(name: "Avenir-Black", size: 10)
+        win.font = UIFont(name: "Avenir-Black", size: 10)
+        draw.font = UIFont(name: "Avenir-Black", size: 10)
+        lose.font = UIFont(name: "Avenir-Black", size: 10)
+        goalsScored.font = UIFont(name: "Avenir-Black", size: 10)
+        goalsAgainst.font = UIFont(name: "Avenir-Black", size: 10)
+        goalsDifference.font = UIFont(name: "Avenir-Black", size: 10)
+        points.font = UIFont(name: "Avenir-Black", size: 10)
         
         
         cell.addSubview(backgroundImage)

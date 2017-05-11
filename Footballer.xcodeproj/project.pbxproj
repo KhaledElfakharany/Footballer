@@ -10,6 +10,8 @@
 		252A928D75C35F78871B16FB /* Pods_Footballer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BABC27F86E6E30A97DBFF3 /* Pods_Footballer.framework */; };
 		953D46F21EC2125D009E8FE6 /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D46F11EC2125D009E8FE6 /* HomeScreenCollectionViewCell.swift */; };
 		953D46F61EC221BB009E8FE6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D46F51EC221BB009E8FE6 /* Country.swift */; };
+		954590F31EC3D8F700029F39 /* FixturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954590F21EC3D8F700029F39 /* FixturesTableViewCell.swift */; };
+		954590F71EC3E87D00029F39 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954590F61EC3E87D00029F39 /* Fixtures.swift */; };
 		9578A8511EC248000018639B /* CompetitionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578A8501EC248000018639B /* CompetitionsScreen.swift */; };
 		9578A8531EC248870018639B /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578A8521EC248870018639B /* Competition.swift */; };
 		9578A8551EC249080018639B /* CompetitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578A8541EC249080018639B /* CompetitionCell.swift */; };
@@ -27,6 +29,8 @@
 		22BABC27F86E6E30A97DBFF3 /* Pods_Footballer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Footballer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		953D46F11EC2125D009E8FE6 /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		953D46F51EC221BB009E8FE6 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = ../Country.swift; sourceTree = "<group>"; };
+		954590F21EC3D8F700029F39 /* FixturesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixturesTableViewCell.swift; sourceTree = "<group>"; };
+		954590F61EC3E87D00029F39 /* Fixtures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
 		9578A8501EC248000018639B /* CompetitionsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionsScreen.swift; sourceTree = "<group>"; };
 		9578A8521EC248870018639B /* Competition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
 		9578A8541EC249080018639B /* CompetitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionCell.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				953D46F11EC2125D009E8FE6 /* HomeScreenCollectionViewCell.swift */,
 				9578A8541EC249080018639B /* CompetitionCell.swift */,
 				9578A8581EC36C590018639B /* tableTableViewCell.swift */,
+				954590F21EC3D8F700029F39 /* FixturesTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			children = (
 				953D46F51EC221BB009E8FE6 /* Country.swift */,
 				9578A8521EC248870018639B /* Competition.swift */,
+				954590F61EC3E87D00029F39 /* Fixtures.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 				9578A8531EC248870018639B /* Competition.swift in Sources */,
 				957BA4081EC2063E00DE331A /* HomeScreen.swift in Sources */,
 				9578A8591EC36C590018639B /* tableTableViewCell.swift in Sources */,
+				954590F31EC3D8F700029F39 /* FixturesTableViewCell.swift in Sources */,
 				9578A8511EC248000018639B /* CompetitionsScreen.swift in Sources */,
+				954590F71EC3E87D00029F39 /* Fixtures.swift in Sources */,
 				9578A8571EC26A810018639B /* CompetitionScreen.swift in Sources */,
 				957BA4061EC2063E00DE331A /* AppDelegate.swift in Sources */,
 				953D46F21EC2125D009E8FE6 /* HomeScreenCollectionViewCell.swift in Sources */,
